@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="allproducts.html" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
+            <a class="dropdown-item" href="allproducts.html">All Products</a>
+            <a class="dropdown-item" href="electronics.html">Electronics</a>
+            <a class="dropdown-item" href="mensclothing.html">Mens's Clothing</a>
+            <a class="dropdown-item" href="womenssclothing.html">Womens's Clothing</a>
+            
           </div>
         </li>
         <li class="nav-item">
