@@ -1,7 +1,10 @@
 let container = document.getElementById('productDisplay');
 
-fetch('https://fakestoreapi.com/products')
-.then(response => response.json()) // Corrected: Call .json() on the response object
+function getProductsByCategory(category) {
+    let APIlink = 'https://fakestoreapi.com/products'
+    APIlink += category
+    fetch(APIlink)
+.then(response => response.json())
 .then(data => {
     data.forEach(product => {
         const cardHTML = `
@@ -19,3 +22,7 @@ fetch('https://fakestoreapi.com/products')
     });
 })
 .catch(error => console.error('Error:', error));
+
+}
+
+

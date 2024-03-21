@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
           </a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="allproducts.html" role="button" aria-haspopup="true" aria-expanded="false">Shop</a>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="#">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Contact Us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
