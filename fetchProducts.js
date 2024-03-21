@@ -1,8 +1,9 @@
 let container = document.getElementById('productDisplay');
 
 function getProductsByCategory(category) {
-    let APIlink = 'https://fakestoreapi.com/products'
-    APIlink += category
+    let APIlink = "https://fakestoreapi.com/products"
+    let categoryURL = encodeURI(category)
+    APIlink += categoryURL
     fetch(APIlink)
 .then(response => response.json())
 .then(data => {

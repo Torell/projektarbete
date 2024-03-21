@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('navbarPlaceholder').innerHTML = `
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Telafictus Mercatura</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor04" aria-controls="navbarColor04" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="collapse navbar-collapse" id="navbarColor04">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Home
+          <a class="nav-link active" href="home.html">Home
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <a class="dropdown-item" href="allproducts.html">All Products</a>
             <a class="dropdown-item" href="electronics.html">Electronics</a>
             <a class="dropdown-item" href="mensclothing.html">Mens's Clothing</a>
-            <a class="dropdown-item" href="womenssclothing.html">Womens's Clothing</a>
+            <a class="dropdown-item" href="womensclothing.html">Womens's Clothing</a>
             
           </div>
         </li>

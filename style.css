@@ -7,3 +7,15 @@
 .card-body {
     min-height: 150px;
 }
+
+body {
+    padding-top: 90px; 
+  }
+
+  body.homepage {
+    padding-top: 90px; 
+    background-image: url(background.webp);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
