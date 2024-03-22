@@ -10,7 +10,7 @@ function getProductsByCategory(category) {
     data.forEach(product => {
         const cardHTML = `
             <div class="col-sm-12 col-md-6 col-lg-3 style="width: 18rem;"> 
-                <a href="specificProduct.html?productId=${product.id}">
+                <a href="specificProduct.html?productId=${product.id}" class="card-text">
                     <div class="card border-white">
                         <img src="${product.image}" class="card-img-top">
                         <div class="card-body">

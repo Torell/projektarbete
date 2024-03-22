@@ -13,18 +13,30 @@ function fetchSpecificProduct(productId) {
     .then(product => {
         const detailsHTML = `
             <div class="row justify-content-center">
-                <div class="col-sm-12 col-md-6 col-lg-3" style="width: 18rem;">
-                    <img src="${product.image}" class="card-img-top">
-                    <div class="card-body">
-                        <h5>${product.title}</h5>
-                        <p>${product.description}</p>
-                        <p class="fw-bold">${product.price} €</p>
-                        <button class="btn btn-primary">Purchase It</button>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <img src="${product.image}" class="img-fluid" alt="Product Image">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8 product-details-container">
+                            <div class="product-details">
+                                <h5 class="title-details-container">${product.title}</h5>
+                                <div class="description-details">
+                                    <p>${product.description}</p>
+                                </div>
+                                <div class="price-details">
+                                    <p class="fw-bold">${product.price} €</p>
+                                </div>
+                                <div class="purchase-button-details">
+                                    <button class="btn btn-primary">Purchase It</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         `;
-        container.innerHTML += detailsHTML;
+        container.innerHTML = detailsHTML;
     })
     .catch(error => console.error('Error:', error));
 }
@@ -46,19 +58,37 @@ function fetchSpecificProduct(productId) {
     .then(product => {
         const detailsHTML = `
             <div class="row justify-content-center">
-                <div class="col-sm-12 col-md-6 col-lg-3" style="width: 18rem;">
-                    <img src="${product.image}" class="card-img-top">
-                    <div class="card-body">
-                        <h5>${product.title}</h5>
-                        <p>${product.description}</p>
-                        <p class="fw-bold">${product.price} €</p>
-                        <button class="btn btn-primary">Purchase It</button>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <img src="${product.image}" class="img-fluid" alt="Product Image">
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8 product-details-container">
+                            <div class="product-details">
+                                <h5>${product.title}</h5>
+                                <p class="description-padding"${product.description}</p>
+                                <p class="fw-bold">${product.price} €</p>
+                                <button class="btn btn-primary">Purchase It</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         `;
-        container.innerHTML += detailsHTML;
+        container.innerHTML = detailsHTML;
     })
     .catch(error => console.error('Error:', error));
 }
+
+
+<h5 class="title-details-container">${product.title}</h5>
+                                <div class="description-details">
+                                    <p>${product.description}</p>
+                                </div>
+                                <div class="price-details">
+                                    <p class="fw-bold">${product.price} €</p>
+                                </div>
+                                <div class="purchase-button-details">
+                                    <button class="btn btn-primary">Purchase It</button>
+                                </div>
 */
