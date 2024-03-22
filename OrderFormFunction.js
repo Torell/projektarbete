@@ -5,12 +5,18 @@ function submitOrder(event) {
     event.preventDefault(); 
   
     
+    if (!validateOrderForm()) {
+      return; 
+    }
+  
+    
     const name = document.getElementById('name').value;
     const phone = document.getElementById('phone').value;
     const email = document.getElementById('email').value;
     const address = document.getElementById('address').value;
+    const postalCode = document.getElementById('postal-code').value;
+    const city = document.getElementById('city').value;
   
-    
     
     fetch('https://fakestoreapi.com/products', {
       method: 'POST',
@@ -21,12 +27,14 @@ function submitOrder(event) {
         name: name,
         phone: phone,
         email: email,
-        address: address
+        address: address,
+        postalCode: postalCode,
+        city: city
       })
     })
     .then(response => {
       if (response.ok) {
-       
+        
         alert('Tack för din beställning!');
       } else {
         
