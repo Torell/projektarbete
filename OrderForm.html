@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    
+</head>
+
+<body class = "container">
+    
+    <div id="navbarPlaceholder" class = "container-fluid"></div>
+    <script src="navbar.js"></script>
+    
+    <script src="bootstrap.js"></script>
+</body>
+</html> 
+    
+  <header>
+    <h1>Beställningssida</h1>
+  </header>
+  
+  <main>
+    <section id="order-form">
+      <h2>Fyll i din beställning</h2>
+      <form id="order-form" onsubmit="submitOrder(event)">
+        <div class="form-group">
+          <label for="name">Namn:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefon:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9()+-]*" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-post:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Leveransadress:</label>
+          <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+        <button type="submit">Skicka beställning</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Min Webbutik</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
