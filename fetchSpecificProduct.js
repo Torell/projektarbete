@@ -39,7 +39,7 @@ function fetchSpecificProduct(productId) {
         container.innerHTML = detailsHTML;
 
         document.getElementById('purchase-btn').addEventListener('click', function(){
-            window.location.href = "orderform.html";
+            window.location.href = "#";
 
             const productDetails = {
                 title: product.title,
