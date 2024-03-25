@@ -28,7 +28,7 @@ function fetchSpecificProduct(productId) {
                                     <p class="fw-bold">${product.price} €</p>
                                 </div>
                                 <div class="purchase-button-details">
-                                    <button class="btn btn-primary">Purchase It</button>
+                                    <button class="btn btn-primary" id="purchase-btn">Purchase It</button>
                                 </div>
                             </div>
                         </div>
@@ -37,6 +37,17 @@ function fetchSpecificProduct(productId) {
             </div>
         `;
         container.innerHTML = detailsHTML;
+
+        document.getElementById('purchase-btn').addEventListener('click', function(){
+            window.location.href = "orderform.html";
+
+            const productDetails = {
+                title: product.title,
+                description: product.description,
+                price: product.price
+            };
+            localStorage.setItem('productDetails', JSON.stringify(productDetails));
+        })
     })
     .catch(error => console.error('Error:', error));
 }

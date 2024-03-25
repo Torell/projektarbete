@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="dropdown-menu">
             <a class="dropdown-item" href="allproducts.html">All Products</a>
             <a class="dropdown-item" href="electronics.html">Electronics</a>
+            <a class="dropdown-item" href="jewelery.html">Jewelery</a>
             <a class="dropdown-item" href="mensclothing.html">Mens's Clothing</a>
             <a class="dropdown-item" href="womensclothing.html">Womens's Clothing</a>
             

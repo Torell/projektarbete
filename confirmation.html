@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Page</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <div id="navbarPlaceholder" class="container-fluid"></div>
+    <div id="productDetails" class="row">
+        <p>Item has been purchased and we will deliver it to you between 6 to 9 months by Roman Mule Shipment AB.</p>
+        <h2 id="productTitle"></h2>
+        <p id="productDescription"></p>
+        <h3 id="productPrice"></h3>
+        <p></p>
+    </div>
+
+    <script src="navbar.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const productDetails = JSON.parse(localStorage.getItem('productDetails'));
+            if (productDetails) {
+                document.getElementById('productTitle').textContent = productDetails.title;
+                document.getElementById('productDescription').textContent = productDetails.description;
+                document.getElementById('productPrice').textContent = `${productDetails.price} €`;
+            }
+        });
+    </script>
+</body>
+</html>
