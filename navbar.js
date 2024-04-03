@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="collapse navbar-collapse" id="navbarColor04">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="home.html">Home
+          <a class="nav-link active" href="index.html">Home
             <span class="visually-hidden">(current)</span>
           </a>
         </li>
