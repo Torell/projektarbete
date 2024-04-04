@@ -36,7 +36,7 @@ function submitOrder(event) {
       if (response.ok) {
         window.location.href = "confirmation.html";
         
-        alert('Tack för din beställning!');
+      
       } else {
         
         alert('Det uppstod ett fel. Försök igen senare.');
